@@ -1,3 +1,23 @@
+
+body{
+  background: gray;
+}
+
 table, th, td {
-  border: 1px solid black;
+    border: 1px solid;
+    padding: 10px;
+    border-collapse: collapse;
+}
+p{
+  color: rgb(255, 255, 255);
+}
+.header{
+  background: rgb(21, 201, 201);
+  margin-top: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+.about{
+  background: white;
+  padding: auto;
 }
