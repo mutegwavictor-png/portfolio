@@ -1,87 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Victor Irungu Mutegwa — Passionate software developer and web designer. Explore my projects and get in touch.">
+  <title>Victor Irungu Mutegwa | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <!--header-->
-    <div class="header">
-        <h1>Victor Irungu Mutegwa</h1>
-        <p>coder,builder web developer trader app developer </p>
-        <nav>
-            <a href="#"> <img src="pngwing.com.png" alt="about" width="40">about</a>
-            <a href="#"> <img src="pngwing.com (2).png" alt="project" width="40">projects</a> 
-            <a href="#"> <img src="pngwing.com (1).png" alt="contacts" width="40">contacts</a>
-        </nav>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#" class="logo">irungu <span>mutegwa</span></a>
+
+    <div class="links" id="nav-links">
+      <a href="#about">about</a>
+      <a href="#projects">projects</a>
+      <a href="#pricing">pricing</a>
+      <a href="#contact">contact me</a>
     </div>
-    <hr>
-    <!--about section-->
-    <section id="about">
-        <h2>About me</h2>
-        <p>Hey I'm victor dev learning student.</p>
-          <h3> quick info</h3>
-          <table style="border: 1px solid black;">
-            <tr>
-                <th>Skill</th>
-                <th>Level</th>
-            </tr>
-            <tr>
-                <td>html</td>
-                <td>beginer</td>
-            </tr>
-            <tr>
-                <td>coding</td>
-                <td>growing every day</td>
-            </tr>
-            <tr>
-                <td>day trader</td>
-                <td>signal provision</td>
-            </tr>
-          </table>
-    </section>
-    <hr>
-    <!--projects-->
-    <section id="projects">
-        <h2>Projects</h2>
-          <table style="border: 1px solid black;">
-            <tr>
-                <th>Project</th>
-                <th>Discription</th>
-                <th>Links</th>
-                  
-            </tr>
-            <tr>
-                <td>glovo mtaa</td>
-                <td>local food stores selling zone</td>
-                <td><a href="#">glovo mtaa</a></td>
-            </tr>
-            <tr>
-                <td>carzone</td>
-                <td>your local car buying store </td>
-                <td><a href="#">carsoko</a></td>
-            </tr>
 
-          </table>
+    <div class="login">
+      <button class="signup" id="pricing-btn" onclick="document.getElementById('pricing').scrollIntoView({behavior:'smooth'})">pricing</button>
+      <button id="dark">dark mode</button>
+    </div>
 
-    </section>
-    <hr>
- <!--contact form-->   
- <section>
-    <form>
-        <label for="email">email</label>
-        <input type="email" placeholder="input your email"><br>
-        <label for="phone number">phone no</label>
-        <input type="text" placeholder="enter your phone number"><br>
-        <input type="submit" value="submit">
+    <!-- Hamburger (mobile) -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Hero / About -->
+  <header id="about">
+    <img src="images/victor.jpeg" alt="Victor Irungu Mutegwa">
+    <div class="left">
+      <h1>victor <span>irungu mutegwa</span></h1>
+      <p>I'm a passionate software developer and web designer crafting beautiful digital experiences.</p>
+    </div>
+  </header>
+
+  <main></main>
+
+  <!-- Projects -->
+  <div class="top" id="projects">
+    <div class="skills">
+      <img src="" alt="HTML/CSS icon">
+      <p>HTML / CSS</p>
+      <button>view projects</button>
+    </div>
+    <div class="skills">
+      <img src="" alt="JavaScript icon">
+      <p>JavaScript</p>
+      <button>view projects</button>
+    </div>
+    <div class="skills">
+      <img src="" alt="React icon">
+      <p>React</p>
+      <button>view projects</button>
+    </div>
+    <div class="skills">
+      <img src="" alt="Bootstrap icon">
+      <p>Bootstrap</p>
+      <button>view projects</button>
+    </div>
+  </div>
+
+
+  <!-- Pricing Section -->
+  <section class="pricing-section" id="pricing">
+    <div class="pricing-header">
+      <h2 class="pricing-title">Simple, Transparent <span>Pricing</span></h2>
+      <p class="pricing-subtitle">Choose the plan that fits your project. All plans include free revisions and ongoing support.</p>
+    </div>
+
+    <div class="pricingcard">
+
+      <!-- Starter -->
+      <div class="card1" id="plan-starter">
+        <div class="card-badge starter-badge">Starter</div>
+        <div class="card-price">
+          <span class="currency">KSh</span>
+          <span class="amount">5,000</span>
+        </div>
+        <p class="card-desc">Perfect for a clean, fast personal portfolio or landing page.</p>
+        <ul class="features">
+          <li><span class="check">✓</span> 1-Page Website</li>
+          <li><span class="check">✓</span> Mobile Responsive</li>
+          <li><span class="check">✓</span> Contact Form</li>
+          <li><span class="check">✓</span> 2 Revision Rounds</li>
+          <li><span class="cross">✗</span> Custom Domain Setup</li>
+          <li><span class="cross">✗</span> CMS Integration</li>
+        </ul>
+        <button class="card-btn" id="btn-starter">Get Started</button>
+      </div>
+
+      <!-- Pro (Popular) -->
+      <div class="card1 card-popular" id="plan-pro">
+        <div class="popular-tag">Most Popular</div>
+        <div class="card-badge pro-badge">Pro</div>
+        <div class="card-price">
+          <span class="currency">KSh</span>
+          <span class="amount">12,000</span>
+        </div>
+        <p class="card-desc">A multi-page site with a polished design and enhanced features.</p>
+        <ul class="features">
+          <li><span class="check">✓</span> Up to 5 Pages</li>
+          <li><span class="check">✓</span> Mobile Responsive</li>
+          <li><span class="check">✓</span> Contact Form</li>
+          <li><span class="check">✓</span> 5 Revision Rounds</li>
+          <li><span class="check">✓</span> Custom Domain Setup</li>
+          <li><span class="cross">✗</span> CMS Integration</li>
+        </ul>
+        <button class="card-btn card-btn-primary" id="btn-pro">Get Started</button>
+      </div>
+
+      <!-- Agency -->
+      <div class="card1" id="plan-agency">
+        <div class="card-badge agency-badge">Agency</div>
+        <div class="card-price">
+          <span class="currency">KSh</span>
+          <span class="amount">25,000</span>
+        </div>
+        <p class="card-desc">Full-scale business website with CMS, SEO, and premium support.</p>
+        <ul class="features">
+          <li><span class="check">✓</span> Unlimited Pages</li>
+          <li><span class="check">✓</span> Mobile Responsive</li>
+          <li><span class="check">✓</span> Contact Form</li>
+          <li><span class="check">✓</span> Unlimited Revisions</li>
+          <li><span class="check">✓</span> Custom Domain Setup</li>
+          <li><span class="check">✓</span> CMS Integration</li>
+          <li><span class="check">✓</span> SEO Optimization</li>
+          <li><span class="check">✓</span> Database Integration</li>
+          <li><span class="check">✔</span> E-commerce Site</li>
+        </ul>
+        <button class="card-btn" id="btn-agency">Get Started</button>
+      </div>
+      
+
+  <!-- Contact Form -->
+  <div class="sin" id="contact">
+    <form action="">
+      <input type="email" placeholder="your email" required>
+      <input type="text" placeholder="your message" required>
+      <button type="submit" id="submit">send message</button>
     </form>
- </section>
- <footer> 
-   <center>
-         <p>@2026 Victor Mutegwa </p> 
-</center>
- </footer>
+  </div>
+
+
+  <!-- Footer -->
+  <footer>
+    <h1>find me on my socials</h1>
+    <div class="link">
+      <a href="">instagram</a>
+      <a href="">twitter</a>
+      <a href="">tiktok</a>
+      <a href="">linkedin</a>
+      <a href="">github</a>
+      <a href="mailto:mutegwavictora@gmail.com">email</a>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
 </body>
+
 </html>
