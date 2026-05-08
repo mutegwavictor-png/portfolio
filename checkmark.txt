@@ -1,0 +1,6 @@
+create a database
+add api keys
+add project links live preview 
+create an api that is linked to your gmail
+set auto update for prices 
+deploy the final product 
